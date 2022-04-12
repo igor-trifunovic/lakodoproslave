@@ -1,0 +1,535 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Gluten&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../img/happybirthday.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Lato';
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+p {
+    font-family: 'Nunito Sans';
+    font-size: 15px;
+}
+
+th {
+    background-color: #363041;
+}
+
+th, tr, td {
+    font-family: 'Lato';
+}
+
+.col {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.badge-danger, .badge-warning {
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.btn .badge-warning:hover {
+	color: #ffffff !important;
+}
+
+.topNav {
+    z-index: 2;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav .navbar-nav li a {
+    color: #636363 !important;
+}
+
+#title {
+    color: #5ddecd !important;
+    font-weight: bold;
+}
+
+#brisi, #izmeni {
+    border-radius: 2em;
+}
+
+#prijava {
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+
+#odjava {
+    color: white;
+    font-weight: bold;
+}
+
+#dodaj {
+    color: white;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#opcije {
+    text-align: center;
+}
+
+#naslov {
+    text-align: center;
+    font-size: 40px;
+    border: 5px solid black;
+    background-color: white;
+}
+
+#agency_photo {
+	width: 400px;
+	height: 310px;
+}
+
+.table {
+    margin-bottom: 5px;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+#admin-container {
+    width: 500px;
+}
+
+.modal .modal-dialog {
+    max-width: 400px;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+    padding: 20px 30px;
+}
+
+.header {
+    background-color: #33cabb;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 40px;
+}
+
+.header h2 {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+.login-container, .reg-container, .res-container, .programme_container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: auto;
+}
+
+.title-container {
+	border: 5px solid #5ddecd;
+    margin: 80px 185px;
+    text-align: center;
+    color: #5ddecd;
+    background-color: #fff;
+}
+
+.agency-container {
+	display: block;
+	margin-top: 80px;
+}
+
+.error-container, .success-container {
+	background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+    padding: 0;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.table-container {
+    margin-top: 100px;
+    display: inline-block;
+}
+
+.res_success_container {
+	padding: 0;
+	background: white;
+	margin-top: 100px;
+	display: inline-block;
+	max-width: 400px;
+	max-height: 200px;
+	border: 2px solid black;
+}
+
+.login_error, .registration_error {
+	font-size: 15px;
+	color: red;
+	font-family: 'Lato';
+	font-weight: bold;
+}
+
+.login_success {
+	font-size: 15px;
+	color: #33cabb;
+	font-family: 'Lato';
+	font-weight: bold;
+}
+
+.error-header {
+	background-color: red;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 40px;
+}
+
+.success-header {
+	background-color: #5ddecd;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 40px;
+}
+
+.login-form {
+    padding: 30px 40px;
+}
+
+.signup-form {
+    padding: 30px;
+}
+
+.login-form button, .signup-form button {
+    background-color: #33cabb;
+	border-radius: 5px;
+	color: #fff;
+    cursor: pointer;
+	display: block;
+	font-size: 17px;
+    font-weight: bold;
+    height: 45px;
+    border: none;
+    margin-top: 10px;
+	width: 50%;
+}
+
+#login-container {
+    margin-top: 90px;
+}
+
+#reg-container, #res-container {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#reg-container .form-control input {
+    height: 35px;
+}
+
+#odjava {
+    font-weight: bold;
+}
+
+input[type="text"]:focus::placeholder, 
+input[type="password"]:focus::placeholder, 
+input[type="email"]:focus::placeholder {
+    color: transparent;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.custom-select {
+	border: 2px solid #0ba596;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    position: relative;
+    border: 0;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.form-control input {
+    border: 2px solid #0ba596;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+    height: 38px;
+    color: #495057;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.form-control #login_username, #login_password {
+    padding-left: 40px;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 13px;
+}
+
+.form-check {
+	display: inline-block;
+	margin-left: -10px;
+}
+
+.card {
+    width: 1300px;
+    display: flex;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(5px);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-deck {
+    margin-top: 80px;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .5rem;
+}
+
+@media screen and (max-width:600px) {
+    .login-form {
+        width: 350px;
+        height: 450px;
+        margin: 300px auto;
+        padding: 200px 0 30px;
+    }
+    
+    .title-container {
+    	margin: 80px 200px;
+    	width: 1000px;
+    }
+    
+    img {
+        width: 100%;
+    }
+
+    .container-fluid {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .col-md-4 {
+        width: 100%;
+        float: left;
+        margin: 0;
+    }
+    
+    .container ul li a:not(:first-child) {
+		display: none;
+	}
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    border-top: 2px solid black;
+    font-weight: bold;
+}
+
+.footer-text {
+    padding-top: 15px;
+    font-family: 'Gluten';
+}
+
+#rezervacija {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#agencije {
+    background-color: #dbe5e6;
+    padding: 30px 0px;
+    margin: 50px 10px 50px;
+}
+
+#ponuda {
+	border: 1.5px solid black;
+	position: relative;
+}
+
+#res_button {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#gameRoom, #disco, #animator {
+	width: 25px; 
+	height: 25px; 
+	margin-left: 10px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.label-check {
+	display: block;
+  	position: relative;
+  	padding-left: 35px;
+  	margin-bottom: 10px;
+  	cursor: pointer;
+  	font-size: 22px;
+  	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+
+#label-check {
+	font-size: 15px;
+}
+
+.label-check input {
+	position: absolute;
+	display: inline-block;
+	opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 25px;
+  	width: 25px;
+  	background-color: #eee;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.label-check:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+.label-check input:checked ~ .checkmark {
+	background-color: #33cabb;
+}
+
+.label-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.label-check .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 8px;
+	height: 12px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.input-drink, .input-food {
+	font-size: 15px;
+    display: flex;
+}
+
+.input-drink input {
+	margin-left: 28px;
+	margin-right: 8px;
+    height: 30px;
+    width: 50px;
+    font-weight: bold;
+}
+
+.input-food input {
+    margin-left: 15px;
+	margin-right: 8px;
+    height: 30px;
+    width: 50px;
+    font-weight: bold;
+}
+
+.label-programme {
+	padding-right: 10px;
+}
+
+.label-programme input {
+	border: 1px solid black;
+}
