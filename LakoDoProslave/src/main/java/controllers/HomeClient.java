@@ -1,6 +1,6 @@
 package controllers;
 
-import classes.ManageAgencies;
+import classes.AgencyDAO;
 import models.Agency;
 
 import java.io.*;
@@ -13,7 +13,7 @@ import java.util.*;
 public class HomeClient extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	ManageAgencies ag = new ManageAgencies();
+	AgencyDAO ag = new AgencyDAO();
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {

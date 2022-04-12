@@ -13,8 +13,8 @@ public class EditAgency extends HttpServlet {
 	
 	Agency agency = null;
 	Programme programme = null;
-	ManageAgencies agencies = new ManageAgencies();
-	ManageProgrammes programmes = new ManageProgrammes();
+	AgencyDAO agencies = new AgencyDAO();
+	ProgrammeDAO programmes = new ProgrammeDAO();
     
 	public EditAgency() {
         super();

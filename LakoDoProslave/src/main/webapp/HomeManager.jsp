@@ -1,8 +1,10 @@
 <%@page import="models.Reservation"%>
-<%@page import="classes.ManageReservations"%>
+<%@page import="classes.ReservationDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<% ManageReservations reservations = new ManageReservations(); %>
+<%
+ReservationDAO reservations = new ReservationDAO();
+%>
 <%
 	response.setHeader("Cache-Control","no-cache");
 	response.setHeader("Cache-Control","no-store");

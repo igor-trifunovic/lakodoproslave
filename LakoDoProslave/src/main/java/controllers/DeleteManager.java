@@ -6,7 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import classes.ManageManagers;
+import classes.ManagerDAO;
 
 /**
  * Servlet implementation class DeleteManager
@@ -15,7 +15,7 @@ import classes.ManageManagers;
 public class DeleteManager extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
-	ManageManagers managers = new ManageManagers();
+	ManagerDAO managers = new ManagerDAO();
 	
     public DeleteManager() {
         super();

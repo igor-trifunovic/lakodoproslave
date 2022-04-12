@@ -11,7 +11,7 @@ import javax.servlet.http.*;
 @WebServlet("/InsertManager")
 public class InsertManager extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    ManageAgencies agencies = new ManageAgencies();
+    AgencyDAO agencies = new AgencyDAO();
 	
     public InsertManager() {
         super();
@@ -31,7 +31,7 @@ public class InsertManager extends HttpServlet {
 		if (session.getAttribute("roleName") != null) {
 			if (session.getAttribute("roleName").toString().equals("admin")) {
 				
-				ManageManagers managers = new ManageManagers();
+				ManagerDAO managers = new ManagerDAO();
 				UserAuth userAuth = new UserAuth();
 				try {
 					managers.createConnection();

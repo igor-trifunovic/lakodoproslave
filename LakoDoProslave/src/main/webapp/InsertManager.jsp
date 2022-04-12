@@ -1,4 +1,4 @@
-<%@page import="classes.ManageAgencies"%>
+<%@page import="classes.AgencyDAO"%>
 <%@page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>  
 <%@page import="models.Agency"%>
@@ -35,9 +35,13 @@
             <h6 class="text-center">Ovde možete uneti novog menadžera.</h6>
         </div>
         <form action="InsertManager" method="POST" class="signup-form" id="signup-form">
-        	<% if (request.getAttribute("poruka") != null) { %> 
-       			<h5 class="registration_error text-center"> <%=request.getAttribute("poruka") %></h5>  
-  			<% } %>
+        	<%
+        	if (request.getAttribute("poruka") != null) {
+        	%> 
+       			<h5 class="registration_error text-center"> <%=request.getAttribute("poruka")%></h5>  
+  			<%
+    			}
+    			%>
             <div class="form-control">
                 <label>Ime</label>
                 <input type="text" name="name" id="name">
@@ -54,7 +58,9 @@
                 <label>Telefon</label>
                 <input type="text" name="phone" id="phone">
             </div>
-            <% ManageAgencies agencies = new ManageAgencies(); %>
+            <%
+            AgencyDAO agencies = new AgencyDAO();
+            %>
             <div class="form-control">
                 <label>Agencija</label>
                 <select id="agencyID" name="agencyID" class="custom-select">

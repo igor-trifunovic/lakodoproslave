@@ -46,7 +46,9 @@
                         <th scope="col">OPCIJE</th>
                     </tr>
                 </thead>
-                <% ManageClients clients = new ManageClients(); %>
+                <%
+                ClientDAO clients = new ClientDAO();
+                %>
 				<tbody>
 					<% for (Client c : clients.getAllClients()) { %>
                     <tr>
@@ -91,7 +93,9 @@
                         <th>OPCIJE</th>
                     </tr>
                 </thead>
-                <% ManageManagers managers = new ManageManagers(); %>
+                <%
+                ManagerDAO managers = new ManagerDAO();
+                %>
                 <tbody>
                 	<% for (Manager m : managers.getAllManagers()) { %>
                     <tr>

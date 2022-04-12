@@ -1,15 +1,15 @@
-<%@page import="classes.ManageClients"%>
+<%@page import="classes.ClientDAO"%>
 <%@page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="classes.ManageAgencies"%>
-<%@page import="classes.ManageProgrammes"%>
+<%@page import="classes.AgencyDAO"%>
+<%@page import="classes.ProgrammeDAO"%>
 <%@page import="java.util.ArrayList" %>
 <%@page import="models.Agency" %>
 <%@page import="models.Programme" %>
 <%
-	Agency a = new Agency();
-	ManageAgencies agencies = new ManageAgencies();
-	ManageProgrammes programmes = new ManageProgrammes();
+Agency a = new Agency();
+	AgencyDAO agencies = new AgencyDAO();
+	ProgrammeDAO programmes = new ProgrammeDAO();
 %>
 <!DOCTYPE html>
 <html>

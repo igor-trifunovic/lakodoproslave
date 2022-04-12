@@ -12,7 +12,7 @@ public class EditClient extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
 	Client client = null;
-	ManageClients clients = new ManageClients();
+	ClientDAO clients = new ClientDAO();
 	
 	public EditClient() {
         super();

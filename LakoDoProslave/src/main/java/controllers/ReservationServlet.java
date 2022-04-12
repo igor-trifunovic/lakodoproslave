@@ -16,7 +16,7 @@ public class ReservationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
 	Programme programme = null;
-	ManageProgrammes programmes = new ManageProgrammes();
+	ProgrammeDAO programmes = new ProgrammeDAO();
 	String agencyID = "";
 	
 	public ReservationServlet() { }

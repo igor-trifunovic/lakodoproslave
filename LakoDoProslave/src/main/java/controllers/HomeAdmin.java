@@ -13,9 +13,9 @@ import java.util.*;
 public class HomeAdmin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	ManageClients manageClients = new ManageClients();
-	ManageManagers manageManagers = new ManageManagers();
-	ManageAdmins manageAdmins = new ManageAdmins();
+	ClientDAO manageClients = new ClientDAO();
+	ManagerDAO manageManagers = new ManagerDAO();
+	AdminDAO manageAdmins = new AdminDAO();
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
@@ -23,9 +23,9 @@ public class HomeAdmin extends HttpServlet {
 		if (session.getAttribute("roleName") != null) {
 			if (session.getAttribute("roleName").toString().matches("admin")) {
 				
-				ManageAgencies manageAgencies = new ManageAgencies();
-				ManageClients manageClients = new ManageClients();
-				ManageManagers manageManagers = new ManageManagers();
+				AgencyDAO manageAgencies = new AgencyDAO();
+				ClientDAO manageClients = new ClientDAO();
+				ManagerDAO manageManagers = new ManagerDAO();
 
 				try {
 					manageAgencies.createConnection();

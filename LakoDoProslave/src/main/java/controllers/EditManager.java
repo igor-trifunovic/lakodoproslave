@@ -12,8 +12,8 @@ public class EditManager extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
 	Manager manager = null;
-	ManageAgencies agencies = new ManageAgencies();
-	ManageManagers managers = new ManageManagers();
+	AgencyDAO agencies = new AgencyDAO();
+	ManagerDAO managers = new ManagerDAO();
 	
 	
 	

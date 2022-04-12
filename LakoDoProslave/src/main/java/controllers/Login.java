@@ -19,9 +19,9 @@ public class Login extends HttpServlet {
 		String password = request.getParameter("password");
 		
 		User user = null;
-		ManageAdmins admin = new ManageAdmins();
-		ManageClients client = new ManageClients();
-		ManageManagers manager = new ManageManagers();
+		AdminDAO admin = new AdminDAO();
+		ClientDAO client = new ClientDAO();
+		ManagerDAO manager = new ManagerDAO();
 		UserAuth userAuth = new UserAuth();
 		
 		try {

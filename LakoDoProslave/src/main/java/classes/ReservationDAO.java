@@ -4,7 +4,7 @@ import models.Reservation;
 import java.sql.*;
 import java.util.*;
 
-public class ManageReservations {
+public class ReservationDAO {
 	
 	String db = "jdbc:mysql://localhost:3306/lakodoproslave";
 	String user = "root";

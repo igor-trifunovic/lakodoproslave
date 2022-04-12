@@ -1,6 +1,6 @@
 package controllers;
 
-import classes.ManageAgencies;
+import classes.AgencyDAO;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/DeleteAgency")
 public class DeleteAgency extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	ManageAgencies agencies = new ManageAgencies();
+	AgencyDAO agencies = new AgencyDAO();
 	
     public DeleteAgency() {
         super();

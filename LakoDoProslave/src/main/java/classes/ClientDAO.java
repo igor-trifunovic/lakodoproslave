@@ -5,7 +5,7 @@ import models.Client;
 import java.sql.*;
 import java.util.*;
 
-public class ManageClients {
+public class ClientDAO {
 	
 	String db = "jdbc:mysql://localhost:3306/lakodoproslave";
 	String user = "root";

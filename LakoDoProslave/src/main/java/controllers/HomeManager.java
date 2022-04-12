@@ -1,6 +1,6 @@
 package controllers;
 
-import classes.ManageReservations;
+import classes.ReservationDAO;
 import models.Reservation;
 import java.io.*;
 import javax.servlet.*;
@@ -14,7 +14,7 @@ import java.util.*;
 @WebServlet("/HomeManager")
 public class HomeManager extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    ManageReservations manageRes = new ManageReservations();
+    ReservationDAO manageRes = new ReservationDAO();
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();

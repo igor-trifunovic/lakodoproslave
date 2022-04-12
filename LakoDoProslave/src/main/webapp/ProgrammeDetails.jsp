@@ -45,9 +45,10 @@
             </div>
         </nav>
     </div>
-        <%  ManageProgrammes mp = new ManageProgrammes(); 
-        	Programme programme = mp.getProgrammeByAgency(agency);
-    	%>
+        <%
+        ProgrammeDAO mp = new ProgrammeDAO(); 
+                	Programme programme = mp.getProgrammeByAgencyID(agency);
+        %>
 	<div class="programme_container" id="programme_container" style="margin-top: 100px">
         <div class="header">
             <h2 class="text-center">DETALJI PONUDE</h2>

@@ -3,7 +3,9 @@
 <%@page import="java.util.*" %>
 <%@page import="models.*"%>
 <%@page import="classes.*"%>
-<%  ManageAgencies agencies = new ManageAgencies(); %>
+<%
+AgencyDAO agencies = new AgencyDAO();
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,9 +59,10 @@
 						    <input type="submit" id="res_button" class="btn btn-info font-weight-bold" value="Idi na rezervaciju">
 	                    </form>
 	                </div>
-	                <%  ManageProgrammes programmes = new ManageProgrammes(); 
-	                	programmes.createConnection();
-	                	Programme programme = programmes.getProgrammeByAgencyID(ag);
+	                <%
+	                ProgrammeDAO programmes = new ProgrammeDAO(); 
+	                	                	programmes.createConnection();
+	                	                	Programme programme = programmes.getProgrammeByAgencyID(ag);
 	                %>
 	                <div class="col-md-4" id="ponuda" style="background-color: #f6eec3">
 	                	<div class="modal-body">

@@ -2,7 +2,9 @@
     pageEncoding="UTF-8"%>
 <%@page import="classes.*"%>
 <%@page import="models.*"%>
-<% ManageReservations manageRes = new ManageReservations(); %>
+<%
+ReservationDAO manageRes = new ReservationDAO();
+%>
 <!DOCTYPE html>
 <html>
 <head>

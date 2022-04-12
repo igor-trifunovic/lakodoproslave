@@ -11,8 +11,8 @@ import javax.servlet.http.*;
 public class InsertAgency extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	ManageAgencies agencies = new ManageAgencies();
-	ManageProgrammes programmes = new ManageProgrammes();
+	AgencyDAO agencies = new AgencyDAO();
+	ProgrammeDAO programmes = new ProgrammeDAO();
 	Programme programme = null;
 	Agency agency = null;
 	

@@ -5,7 +5,7 @@ import models.Admin;
 import java.sql.*;
 import java.util.*;
 
-public class ManageAdmins {
+public class AdminDAO {
 	
 	String db = "jdbc:mysql://localhost:3306/lakodoproslave";
 	String user = "root";

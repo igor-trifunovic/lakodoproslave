@@ -1,6 +1,6 @@
 package controllers;
 
-import classes.ManageClients;
+import classes.ClientDAO;
 import classes.UserAuth;
 import models.Client;
 import java.io.*;
@@ -19,7 +19,7 @@ public class Registration extends HttpServlet {
 		String email = request.getParameter("email");
 		String phone = request.getParameter("phone");
 		
-		ManageClients manageClients = new ManageClients();
+		ClientDAO manageClients = new ClientDAO();
 		UserAuth userAuth = new UserAuth();
 		
 		try {

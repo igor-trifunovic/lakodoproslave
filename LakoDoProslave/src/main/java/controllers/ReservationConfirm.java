@@ -13,7 +13,7 @@ import javax.servlet.http.*;
 public class ReservationConfirm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	ManageReservations reservations = new ManageReservations();
+	ReservationDAO reservations = new ReservationDAO();
 	Reservation reservation = null;
 	
     public ReservationConfirm() {

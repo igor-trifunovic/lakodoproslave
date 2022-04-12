@@ -5,7 +5,7 @@ import models.Agency;
 import java.sql.*;
 import java.util.*;
 
-public class ManageAgencies {
+public class AgencyDAO {
 	
 	String db = "jdbc:mysql://localhost:3306/lakodoproslave";
 	String user = "root";
