@@ -7,14 +7,14 @@ import java.util.*;
 
 public class AgencyDAO {
 	
-	String db = "jdbc:mysql://localhost:3306/lakodoproslave";
-	String user = "root";
-	String pass = "";
+	static String db = "jdbc:mysql://localhost:3306/lakodoproslave";
+	static String user = "root";
+	static String pass = "";
 	
-	Connection con;
-	Statement stmt;
+	static Connection con;
+	static Statement stmt;
 	
-	public void createConnection() {
+	public static void createConnection() {
 		try {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");

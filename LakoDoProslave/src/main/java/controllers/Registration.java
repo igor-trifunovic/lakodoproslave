@@ -23,7 +23,7 @@ public class Registration extends HttpServlet {
 		UserAuth userAuth = new UserAuth();
 		
 		try {
-			manageClients.createConnection();
+			ClientDAO.createConnection();
 			if (name != "" && username != "" && email != "" && phone != "") {
 				
 				String password = request.getParameter("password");
